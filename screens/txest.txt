@@ -1,0 +1,39 @@
+
+import React, {useState, useEffect} from 'react';
+import { StyleSheet, View, Text, TouchableOpacity, FlatList, Button , Card} from 'react-native';
+
+export default function Medical(){
+    const [users, setusers] = useState([])
+    const [isloading, setisloading]= useState(false);
+
+  const  getUsers = () => {
+        fetch('https://spreadsheets.google.com/feeds/list/1RB_gu3qGVNWMNSXGMd2d-l_FzQ1t3TBSY5w86UiOr8c/oq609z5/public/values?alt=json')
+        .then((response)=> response.json())
+        .then((json) => {
+            setusers(json.feed.entry)
+        })
+        
+        .catch((error) => console.error(error))
+        .finally(() => setisloading(false));
+    }
+    
+    useEffect( () => {
+        setisloading(true);
+        getUsers();
+    }, []);
+    return(
+        <View>
+            {isloading ? <Text>Loading...</Text> : (
+                <View>
+            <Text>blood donors</Text>
+            <FlatList 
+            data={users}
+             keyExtractor= { ({item})=> item.gsx$no.$t}
+            renderItem= { ({item}) =>(<Card>  <Text> {item.gsx$name.$t}</Text> </Card>)} />
+            </View>
+            )}
+
+
+        </View>
+    );
+}

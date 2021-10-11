@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">dadri</string>
+ <string name="facebook_app_id">1041442369945194</string>
+<string name="fb_login_protocol_scheme">fb1041442369945194</string>
+</resources>

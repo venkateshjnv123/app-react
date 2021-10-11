@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "267808719577",
+    "firebase_url": "https://app-dadri-58756-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "app-dadri-58756",
+    "storage_bucket": "app-dadri-58756.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267808719577:android:02782b4e8055fcdc9b74c8",
+        "android_client_info": {
+          "package_name": "com.dadri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267808719577-q6bm3t0dntu15e5714ln2ind23ph47m5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dadri",
+            "certificate_hash": "2697ff25e59b419a50aa1aaa2303ad2d67627833"
+          }
+        },
+        {
+          "client_id": "267808719577-ijtep8mqrl79fgl0k1k8fjlu5t0gq0em.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZE29Rg6ALSNpJ1FOI8Q63Xz0zakd6W_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267808719577-ijtep8mqrl79fgl0k1k8fjlu5t0gq0em.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

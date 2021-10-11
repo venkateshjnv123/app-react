@@ -1,0 +1,6 @@
+ {
+   "name": "dadri",
+   "android": {
+     "package": "io.expo.client"
+   }
+ }
