@@ -140,7 +140,7 @@ android {
         applicationId "com.dadri"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        buildToolsVersion "23.0.1"
+        buildToolsVersion "23.0.3"
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -177,7 +177,8 @@ android {
             // Caution! In production, you need to generate your own keystore file.
             // see https://reactnative.dev/docs/signed-apk-android.
             signingConfig signingConfigs.release
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
